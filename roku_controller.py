@@ -150,11 +150,7 @@ def on_release(key):
 def find_roku():
     arp_results = os.popen("arp -a").read()
     try:
-<<<<<<< HEAD
-        arp_results+=os.popen('py -c "import scapy.all as scapy;scapy.arping(\'192.168.0.1/24\')').read()
-=======
         arp_results+=os.popen('py -c "import scapy.all as scapy;scapy.arping(\'192.168.1.1/24\')').read()
->>>>>>> 78f647dcd705f67e0a3adeaa47a19b6b9b712063
     except:
         pass
     try:
